@@ -11,6 +11,27 @@ namespace LinkedList
     {
         public Node head;
 
+        public void append(int value)
+        {
+            Node newNode = new Node();
+            newNode.data = value;
+            newNode.next = null;
+            if (head != null)
+            {
+                Node temp = head;
+
+                while (temp.next != null)
+                {
+                    temp = temp.next;
+                }
+                temp.next = newNode;
+            }
+            else
+            {
+                head = newNode;
+            }
+        }
+
         public void insert(int value)
         {
             Node newNode = new Node();
