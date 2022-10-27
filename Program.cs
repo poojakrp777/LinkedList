@@ -13,9 +13,9 @@ namespace LinkedList
             Console.WriteLine("Welcome To the Data structure program using Linked List");
 
             Listoperation listOperation = new Listoperation();
-            listOperation.insert(56);
-            listOperation.insert(30);
-            listOperation.insert(70);
+            listOperation.Add(56);
+            listOperation.Add(30);
+            listOperation.Add(70);
             listOperation.display();
         }
     }
